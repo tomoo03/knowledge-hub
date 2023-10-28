@@ -2,17 +2,14 @@
   "name": "knowledge-hub",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "npm": "use yarn instead",
-    "yarn": "4.0.0"
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "next-lint": "next lint",
     "lint": "eslint \"{src,apps,libs,test}/**/*.{ts,tsx}\" --fix",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "prepare": "husky install"
   },
   "dependencies": {
     "next": "14.0.0",
