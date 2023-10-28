@@ -1,0 +1,22 @@
+{
+  "[javascript]": {
+    "editor.tabSize": 2,
+  },
+  "[json]": {
+    "editor.tabSize": 2,
+  },
+  "[typescript]": {
+    "editor.tabSize": 2,
+  },
+  "[typescriptreact]": {
+    "editor.tabSize": 2,
+  },
+  "[markdown]": {
+    "editor.wordWrap": "off",
+    "files.trimTrailingWhitespace": false,
+  },
+  "files.eol":"\n",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
