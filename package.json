@@ -12,10 +12,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@chakra-ui/next-js": "^2.1.5",
-    "@chakra-ui/react": "^2.8.1",
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
+    "@nextui-org/react": "^2.1.13",
     "framer-motion": "^10.16.4",
     "next": "14.0.0",
     "react": "^18",
@@ -28,13 +25,16 @@
     "@types/react-dom": "^18",
     "@typescript-eslint/eslint-plugin": "^6.9.0",
     "@typescript-eslint/parser": "^6.9.0",
+    "autoprefixer": "^10.4.16",
     "eslint": "^8",
     "eslint-config-next": "14.0.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-react": "^7.33.2",
     "husky": "^8.0.3",
     "lint-staged": "^15.0.2",
+    "postcss": "^8.4.31",
     "prettier": "^3.0.3",
+    "tailwindcss": "^3.3.5",
     "typescript": "^5"
   },
   "lint-staged": {
