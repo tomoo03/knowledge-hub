@@ -12,3 +12,25 @@
     margin: 0 auto;
   }
 }
+
+.side > section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.side > section > h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.side > section > div {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}

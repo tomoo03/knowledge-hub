@@ -22,7 +22,7 @@ export default function Sidebar() {
     <div className={styles.side}>
       <section>
         <h2>カテゴリー</h2>
-        <div className="flex flex-wrap md:inline-grid md:grid-cols-3 gap-4">
+        <div>
           {categories.map((category, index) => (
             <Link key={`${category.name}-${index}`} href={`/category/${category.name}`}>
               <Button  radius="full">
@@ -34,7 +34,7 @@ export default function Sidebar() {
       </section>
       <section>
         <h2>タグ</h2>
-        <div className="flex flex-wrap md:inline-grid md:grid-cols-3 gap-4">
+        <div>
           {tags.map((tag, index) => (
             <Link key={`${tag.name}-${index}`} href={`/tag/${tag.name}`}>
               <Button  radius="full">
