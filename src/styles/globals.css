@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #F7F7F7;
+}
+
+* {
+  box-sizing: border-box;
+}

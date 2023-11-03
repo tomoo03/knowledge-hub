@@ -1,0 +1,14 @@
+.side {
+  width: 25%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  @media screen and (max-width: 959px) {
+    /* 959px以下に適用されるCSS（タブレット・スマホ用） */
+    width: 100%;
+    margin: 0 auto;
+  }
+}

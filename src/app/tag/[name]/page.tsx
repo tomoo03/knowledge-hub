@@ -1,8 +1,22 @@
-import { Button } from '@nextui-org/button';
-import styles from '@/styles/pages/page.module.css';
 import ArticleCard from '@/app/components/article/articleCard';
+import styles from '@/styles/pages/tag/name/page.module.css';
 
-export default function Page() {
+interface Props {
+  readonly params: {
+    readonly name: string
+  }
+}
+
+export function generateStaticParams() {
+  return [
+    { name: 'web' },
+    { name: 'ssg' },
+    { name: 'develop' },
+    { name: 'react' },
+  ];
+}
+
+export default function Page({ params: { name } }: Props) {
   const articles = [
     { title: '記事1', content: '記事1の内容' },
     { title: '記事2', content: '記事2の内容' },
@@ -13,7 +27,7 @@ export default function Page() {
     <>
       <div className={styles.row}>
         <div>
-          <Button>Click me</Button>
+          <p>タグ：{name}</p>
         </div>
 
         {articles.map(({ title, content }) => (
@@ -23,6 +37,7 @@ export default function Page() {
             content={content}
           />
         ))}
+
       </div>
     </>
   );

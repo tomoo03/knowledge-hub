@@ -1,0 +1,30 @@
+.wrapper {
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #FFFFFF;
+}
+
+.container {
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 959px) {
+    /* 959px以下に適用されるCSS（タブレット・スマホ用） */
+    flex-direction: column;
+  }
+}
+
+.main {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 959px) {
+    /* 959px以下に適用されるCSS（タブレット・スマホ用） */
+    width: 100%;
+  }
+}

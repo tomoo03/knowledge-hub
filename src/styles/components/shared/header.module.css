@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.navbar-pc-container {
+  display: none;
+
+  @media screen and (min-width: 960px) {
+    /* 960px以上に適用されるCSS（タブレット・スマホ用） */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.navbar-sp-container {
+  display: none;
+
+  @media screen and (max-width: 959px) {
+    /* 959px以下に適用されるCSS（PC用） */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
