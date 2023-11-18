@@ -34,6 +34,7 @@ export default function Page({ params: { name } }: Props) {
             key={title}
             title={title}
             content={content}
+            category={name}
           />
         ))}
 

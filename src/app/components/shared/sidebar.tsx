@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from '@/styles/components/shared/sidebar.module.css';
 // import Link from 'next/link';
-import { Button } from '@nextui-org/react';
-import Link from 'next/link';
+import CategoryButton from '../buttons/categoryButton';
+import TagButton from '../buttons/tagButton';
 
 export default function Sidebar() {
   const categories = [
@@ -24,11 +24,10 @@ export default function Sidebar() {
         <h2>カテゴリー</h2>
         <div>
           {categories.map((category, index) => (
-            <Link key={`${category.name}-${index}`} href={`/category/${category.name}`}>
-              <Button  radius="full">
-                {category.name}
-              </Button>
-            </Link>
+            <CategoryButton
+              key={`${category.name}-${index}`}
+              name={category.name}
+            />
           ))}
         </div>
       </section>
@@ -36,21 +35,12 @@ export default function Sidebar() {
         <h2>タグ</h2>
         <div>
           {tags.map((tag, index) => (
-            <Link key={`${tag.name}-${index}`} href={`/tag/${tag.name}`}>
-              <Button  radius="full">
-                {tag.name}
-              </Button>
-            </Link>
+            <TagButton
+              key={`${tag.name}-${index}`}
+              name={tag.name}
+            />
           ))}
         </div>
-      </section>
-      <section>
-        <h2>カテゴリー</h2>
-        <p>sidebar</p>
-      </section>
-      <section>
-        <h2>カテゴリー</h2>
-        <p>sidebar</p>
       </section>
     </div>
   );
