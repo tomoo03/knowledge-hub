@@ -17,9 +17,12 @@ export function generateStaticParams() {
 
 export default function Page({ params: { name } }: Props) {
   const articles = [
-    { title: '記事1', content: '記事1の内容' },
-    { title: '記事2', content: '記事2の内容' },
-    { title: '記事3', content: '記事3の内容' },
+    { title: '記事1', content: '記事1の内容', category: name, tags: [
+      { name: 'web' },
+      { name: 'ssg' },
+      { name: 'develop' },
+      { name: 'react' },
+    ] },
   ];
 
   return (
@@ -29,12 +32,13 @@ export default function Page({ params: { name } }: Props) {
           <p>カテゴリ：{name}</p>
         </div>
 
-        {articles.map(({ title, content }) => (
+        {articles.map(({ title, content, tags }) => (
           <ArticleCard
             key={title}
             title={title}
             content={content}
             category={name}
+            tags={tags}
           />
         ))}
 
